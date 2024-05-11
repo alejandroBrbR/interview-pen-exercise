@@ -14,7 +14,32 @@ Output: []
 */
 
 function patternMatching(words: Array<string>, pattern: string): Array<string> {
-  return [];
-}
+  const result: Array<string> = [];
+  words.forEach((word) => {
+    // this is a quick check to see if the word is the same length as the pattern
+    if (word.length !== pattern.length) return;
 
+    const dictionary: { [key: string]: string } = {}; // Add index signature to dictionary object
+    let correctPattern = false
+
+    word.split("").forEach((letter, index) => {
+      if (dictionary[letter]) {
+        if (dictionary[letter] !== pattern[index]) {
+          correctPattern = false;
+          return
+        }
+      } else if (Object.values(dictionary).includes(pattern[index])) {
+        correctPattern = false;
+        return
+      }
+
+      // assign the letter to the dictionary
+      dictionary[letter] = pattern[index];
+      correctPattern = true;
+    });
+
+    if (correctPattern) result.push(word);
+  });
+  return result;
+}
 export { patternMatching };
