@@ -15,8 +15,5 @@
 *.log
 *.tmp
 
-# Ignore compiled JavaScript files
-*.js
-
 # Ignore TypeScript declaration files
 *.d.ts
