@@ -1,0 +1,25 @@
+{
+  "name": "interview-pen-exercise-longest-palindrome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "compile": "npx tsc",
+    "compile:dev": "npx tsc --watch",
+    "start:dev": "npx ts-node index.ts",
+    "prettier": "npx prettier --write ."
+  },
+  "keywords": [],
+  "author": "Alejandro Barba",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "jest": "^29.5.0",
+    "prettier": "2.8.7",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3"
+  }
+}

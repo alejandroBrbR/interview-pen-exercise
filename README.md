@@ -4,7 +4,8 @@ This is a repository that includes the algorithms seen in the [Interview pen](ht
 
 ## Exercises
 
-[Pattern Matching](./patternMatching/README.md)
+1. [Pattern Matching](./patternMatching/README.md)
+2. [Longest Palindrome Construction](./longestPalindrome/README.md)
 
 ## Prerequisites
 
