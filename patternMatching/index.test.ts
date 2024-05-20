@@ -29,4 +29,9 @@ describe("patternMatching testing", () => {
     const res = patternMatching(["aa", "bb"], "zy");
     expect(res).toStrictEqual([]);
   });
+
+  test("Test 4", () => {
+    const res = patternMatching(["xyz", "abc", "pop", "bad", "cop", "dad", "hot", "mom", "def"], "def");
+    expect(res).toStrictEqual(["xyz", "abc", "bad", "cop", "hot"]);
+  });
 });

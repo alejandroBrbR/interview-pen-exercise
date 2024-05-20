@@ -57,6 +57,7 @@ function patternMatching(words: Array<string>, pattern: string): Array<string> {
 function patternMatch(word: string, pattern: string): boolean {
     // this is a quick check to see if the word is the same length as the pattern
     if (word.length !== pattern.length) return false;
+    if (word === pattern) return false;
 
     const dictionaryLetters: { [key: string]: string } = {}; 
     const dictionaryPattern: { [key: string]: string } = {}; 
